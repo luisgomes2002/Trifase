@@ -1,0 +1,51 @@
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: aliceblue;
+  background-color: transparent;
+  padding: 0 5%;
+}
+
+.navBar section {
+  background-color: transparent;
+}
+
+.navBar h1 {
+  cursor: pointer;
+  font-size: 50px;
+  background-color: transparent;
+}
+
+.navBar button {
+  border: none;
+  border-radius: 20px;
+  background-color: #ffffff23;
+  font-size: 20px;
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.navInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navInfo a {
+  margin: 0 15%;
+  cursor: pointer;
+  font-size: 25px;
+  background-color: transparent;
+  color: #ffffff7c;
+}
+
+.navInfo a:hover {
+  color: #fff;
+}
