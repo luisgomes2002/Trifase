@@ -4,14 +4,14 @@
   padding: 0;
   font-family: "Kumbh Sans", sans-serif;
   scroll-behavior: smooth;
-  background-color: #121214;
+  /* background-color: #121214; */
 }
 
 .homePageCenter {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 900px;
+  height: 920px;
   background-image: url(../assets/solar.jpg);
   background-repeat: no-repeat;
   background-size: cover;

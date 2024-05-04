@@ -1,0 +1,28 @@
+.projects {
+  text-align: center;
+}
+
+.showProjects {
+  margin: 5%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.imageProps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 340px;
+  width: 440px;
+  margin-bottom: 10%;
+  border-radius: 5px;
+  background-color: #fd8a20;
+}
+
+.imageProps img {
+  width: 380px;
+  height: 280px;
+  border-radius: 5px;
+}

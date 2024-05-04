@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trifase</title>
-    <link rel="stylesheet" href="../Styles/HomePage.css" />
-    <link rel="stylesheet" href="../Styles/NavBar.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,9 +15,9 @@
     <div class="navBar">
       <h1>Trifase</h1>
       <section class="navInfo">
-        <a>Sobre</a>
-        <a>Sobre</a>
-        <a>Sobre</a>
+        <a href="#about">SOBRE</a>
+        <a>PROJETOS</a>
+        <a>SOBRE</a>
       </section>
       <button>Fale conosco</button>
     </div>
@@ -31,12 +29,37 @@
       </p>
       <button>Learn more</button>
     </div>
+    <section id="about" class="about">
+      <h1>Um pouco sobre nós</h1>
+      <p>
+        A Trifase Soluções Elétricas é uma empresa especializada no
+        dimensionamento e instalação de Sistemas Geradores Fotovoltaicos, e está
+        presente em diversos segmentos de serviços elétricos, desde a concepção
+        da ideia e elaboração do projeto até a execução. Somos uma empresa
+        comprometida com a qualidade e a excelência em tudo o que fazemos. Para
+        isso, contamos com uma equipe de pro ssionais quali cados e habilitados
+        para executar os mais diversos tipos de serviços. A empresa tem como
+        propósito atender plenamente o cliente de forma customizada, para que
+        ele possa produzir a sua própria energia elétrica de forma sustentável,
+        e ciente e com ganhos financeiros.
+      </p>
+    </section>
+    <section class="projects">
+      <h1>Nossos Projetos</h1>
+      <div class="showProjects"></div>
+    </section>
     <footer>
       <p>Redes Sociais</p>
       <i class="fa-brands fa-instagram"></i>
     </footer>
   </body>
-  <script href="../src/HomePage.js"></script>
+  <!-- Css -->
+  <link rel="stylesheet" href="../Styles/HomePage.css" />
+  <link rel="stylesheet" href="../Styles/NavBar.css" />
+  <link rel="stylesheet" href="../Styles/About.css" />
+  <link rel="stylesheet" href="../Styles/Projects.css" />
+  <!-- JavaScript -->
+  <script src="../src/Projects.js"></script>
   <script
     src="https://kit.fontawesome.com/0e949e0c2d.js"
     crossorigin="anonymous"
