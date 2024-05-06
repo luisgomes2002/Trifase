@@ -10,43 +10,43 @@
   color: aliceblue;
   background-color: transparent;
   padding: 0 5%;
-}
 
-.navBar section {
-  background-color: transparent;
-}
+  section {
+    background-color: transparent;
+  }
 
-.navBar h1 {
-  cursor: pointer;
-  font-size: 50px;
-  background-color: transparent;
-}
+  h1 {
+    cursor: pointer;
+    font-size: 50px;
+    background-color: transparent;
+  }
 
-.navBar button {
-  border: none;
-  border-radius: 25px;
-  background-color: #ffffff23;
-  font-size: 20px;
-  padding: 15px;
-  cursor: pointer;
-  color: #fff;
+  button {
+    border: none;
+    border-radius: 25px;
+    background-color: #ffffff23;
+    font-size: 20px;
+    padding: 15px;
+    cursor: pointer;
+    color: #fff;
+  }
 }
 
 .navInfo {
   display: flex;
   align-items: center;
   justify-content: center;
-}
 
-.navInfo a {
-  margin: 0 15%;
-  cursor: pointer;
-  font-size: 18px;
-  background-color: transparent;
-  color: #ffffff7c;
-  text-decoration: none;
-}
+  a {
+    margin: 0 15%;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: transparent;
+    color: #ffffff7c;
+    text-decoration: none;
+  }
 
-.navInfo a:hover {
-  color: #fff;
+  a:hover {
+    color: #fff;
+  }
 }

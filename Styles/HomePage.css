@@ -12,36 +12,41 @@
   justify-content: center;
   align-items: center;
   height: 920px;
-  background-image: url(../assets/solar.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   flex-direction: column;
-}
-
-.homePageCenter h1 {
-  color: #fff;
-  width: 50%;
   text-align: center;
-  background-color: transparent;
-  font-size: 80px;
+
+  h1 {
+    color: #fff;
+    width: 50%;
+    text-align: center;
+    background-color: transparent;
+    font-size: 80px;
+  }
+
+  button {
+    background-color: white;
+    font-size: 30px;
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    margin: 10px;
+    color: #49a6e9;
+    cursor: pointer;
+  }
+
+  p {
+    margin: 20px;
+    font-size: 20px;
+    color: #fff;
+    width: 700px;
+  }
 }
 
-.homePageCenter p {
+.homePageCenter .homePageCenter p {
   background-color: transparent;
   margin: 10px;
   color: #fff;
   width: 50%;
   text-align: center;
-}
-
-.homePageCenter button {
-  background-color: white;
-  font-size: 30px;
-  padding: 15px;
-  border-radius: 25px;
-  border: none;
-  margin: 10px;
-  color: #3272d6;
-  cursor: pointer;
 }

@@ -12,7 +12,7 @@
     />
   </head>
   <body>
-    <div class="navBar">
+    <nav class="navBar">
       <h1>Trifase</h1>
       <section class="navInfo">
         <a href="#about">SOBRE</a>
@@ -20,15 +20,25 @@
         <a>SOBRE</a>
       </section>
       <button>Fale conosco</button>
-    </div>
-    <div class="homePageCenter">
-      <h1>Junte-se à revolução da energia solar</h1>
-      <p>
-        Descubra a energia solar com nossos serviços personalizados, uma fonte
-        limpa e econômica para iluminar seu futuro.
-      </p>
-      <button>Learn more</button>
-    </div>
+    </nav>
+    <header>
+      <div class="homePageCenter">
+        <video muted autoplay loop class="video-container">
+          <source src="../assets/TrifaseVideo.mp4" type="video/mp4" />
+        </video>
+        <h1>Junte-se à revolução da energia solar</h1>
+        <p>
+          Descubra a energia solar com nossos serviços personalizados, uma fonte
+          limpa e econômica para iluminar seu futuro.
+        </p>
+        <button>Learn more</button>
+        <button class="switch-btn">
+          <span> play </span>
+          <span> pause </span>
+          <span class="switch"></span>
+        </button>
+      </div>
+    </header>
     <section id="about" class="about">
       <h1>Um pouco sobre nós</h1>
       <p>
@@ -58,6 +68,7 @@
   <link rel="stylesheet" href="../Styles/NavBar.css" />
   <link rel="stylesheet" href="../Styles/About.css" />
   <link rel="stylesheet" href="../Styles/Projects.css" />
+  <link rel="stylesheet" href="../Styles/Video.css" />
   <!-- JavaScript -->
   <script src="../src/Projects.js"></script>
   <script

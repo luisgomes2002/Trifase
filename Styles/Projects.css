@@ -19,10 +19,10 @@
   margin-bottom: 10%;
   border-radius: 5px;
   background-color: #fd8a20;
-}
 
-.imageProps img {
-  width: 380px;
-  height: 280px;
-  border-radius: 5px;
+  img {
+    width: 380px;
+    height: 280px;
+    border-radius: 5px;
+  }
 }
