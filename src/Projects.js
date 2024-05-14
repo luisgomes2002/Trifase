@@ -1,3 +1,22 @@
+const imagesWithText = [
+  {
+    src: "../assets/image7.jpeg",
+    text: "Madeireira Silva Serrinha-BA 9,75KWp",
+  },
+  {
+    src: "../assets/image1.jpeg",
+    text: "????",
+  },
+  {
+    src: "../assets/image5.jpg",
+    text: "C&E Mercado Biritinga-Ba 14,4KWp",
+  },
+  {
+    src: "../assets/image2.jpeg",
+    text: "Mercado Porcino, Barracas-Ponto Novo- Ba 9,9KWp",
+  },
+];
+
 //Home video
 const btn = document.querySelector(".switch-btn");
 const video = document.querySelector(".video-container");
@@ -24,31 +43,13 @@ btn.addEventListener("click", () => {
 //Show images
 document.addEventListener("DOMContentLoaded", () => {
   const grid = document.querySelector(".showProjects");
-  const imagesWithText = [
-    {
-      src: "../assets/image7.jpeg",
-      text: "Madeireira Silva Serrinha-BA 9,75KWp",
-    },
-    {
-      src: "../assets/image1.jpeg",
-      text: "????",
-    },
-    {
-      src: "../assets/image5.jpg",
-      text: "C&E Mercado Biritinga-Ba 14,4KWp",
-    },
-    {
-      src: "../assets/image2.jpeg",
-      text: "Mercado Porcino, Barracas-Ponto Novo- Ba 9,9KWp",
-    },
-  ];
 
   imagesWithText.forEach((item) => {
     const gridItem = document.createElement("div");
     gridItem.classList.add("imageProps");
     const images = document.createElement("img");
     images.src = item.src;
-    const text = document.createElement("p");
+    const text = document.createElement("span");
     text.textContent = item.text;
     gridItem.appendChild(images);
     gridItem.appendChild(text);
