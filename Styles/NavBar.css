@@ -26,7 +26,7 @@
     background-color: transparent;
   }
 
-  button {
+  a {
     border: none;
     border-radius: 25px;
     background-color: #ffffff23;
@@ -34,6 +34,7 @@
     padding: 15px;
     cursor: pointer;
     color: #fff;
+    text-decoration: none;
   }
 }
 

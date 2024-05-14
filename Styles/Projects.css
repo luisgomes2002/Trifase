@@ -1,11 +1,18 @@
 .projects {
   text-align: center;
+
+  h1 {
+    color: #fd8a20;
+    font-size: 35px;
+  }
 }
 
+/* #404A8A #a94e15*/
+
 .showProjects {
-  margin: 5%;
+  margin: 7% 5%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   justify-items: center;
 }
 
@@ -18,11 +25,13 @@
   width: 440px;
   margin-bottom: 10%;
   border-radius: 5px;
-  background-color: #fd8a20;
 
   img {
-    width: 380px;
-    height: 280px;
-    border-radius: 5px;
+    background-color: rgb(44, 73, 73);
+    object-fit: cover;
+    min-width: 430px;
+    max-width: 430px;
+    min-height: 480px;
+    border-radius: 25px;
   }
 }

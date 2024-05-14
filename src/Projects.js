@@ -1,6 +1,15 @@
 //Home video
 const btn = document.querySelector(".switch-btn");
 const video = document.querySelector(".video-container");
+window.addEventListener("scroll", function () {
+  if (window.scrollY >= 700) {
+    video.pause();
+    btn.classList.add("slide");
+  } else {
+    video.play();
+    btn.classList.remove("slide");
+  }
+});
 
 btn.addEventListener("click", () => {
   if (!btn.classList.contains("slide")) {
@@ -17,19 +26,20 @@ document.addEventListener("DOMContentLoaded", () => {
   const grid = document.querySelector(".showProjects");
   const imagesWithText = [
     {
-      src: "../assets/solar.jpg",
-      text: "Supermercado O Baratinho Serrinha-Ba 29,16KWp",
-    },
-    {
-      src: "../assets/solar.jpg",
-      text: "Mercado Porcino, Barracas-Ponto Novo- Ba 9,9KWp",
-    },
-    { src: "../assets/solar.jpg", text: "C&E Mercado Biritinga-Ba 14,4KWp" },
-    { src: "../assets/solar.jpg", text: "Residência em Serrinha-Ba 12,6KWp" },
-    { src: "../assets/solar.jpg", text: "Araci- Ba 7,7KWp x 6KW" },
-    {
-      src: "../assets/solar.jpg",
+      src: "../assets/image7.jpeg",
       text: "Madeireira Silva Serrinha-BA 9,75KWp",
+    },
+    {
+      src: "../assets/image1.jpeg",
+      text: "????",
+    },
+    {
+      src: "../assets/image5.jpg",
+      text: "C&E Mercado Biritinga-Ba 14,4KWp",
+    },
+    {
+      src: "../assets/image2.jpeg",
+      text: "Mercado Porcino, Barracas-Ponto Novo- Ba 9,9KWp",
     },
   ];
 
