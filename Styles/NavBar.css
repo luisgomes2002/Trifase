@@ -10,6 +10,7 @@
   color: aliceblue;
   background-color: transparent;
   padding: 0 5%;
+  z-index: 10;
 
   img {
     width: 200px;
@@ -36,6 +37,17 @@
     color: #fff;
     text-decoration: none;
   }
+
+  button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 30px;
+    padding-right: 2%;
+    display: none;
+    overflow: hidden;
+    color: #fff;
+  }
 }
 
 .navInfo {
@@ -54,5 +66,66 @@
 
   a:hover {
     color: #fff;
+  }
+}
+
+.section-two {
+  display: none;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 650px) {
+  .navBar {
+    display: flex;
+    padding: 0.5rem 1rem;
+
+    img {
+      width: 140px;
+      height: 75px;
+      margin-top: 0.5rem;
+    }
+
+    section {
+      display: none;
+    }
+
+    a {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 20px 0;
+      color: black;
+      background-color: none;
+    }
+
+    button {
+      display: block;
+      width: 20%;
+      padding: 7%;
+      text-align: center;
+    }
+
+    .contact {
+      display: none;
+    }
+  }
+
+  .navBar.visible {
+    background-color: #fff;
+    padding: 1rem;
+
+    .section-two.visible {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #fff;
+    }
+
+    button {
+      color: black;
+    }
   }
 }

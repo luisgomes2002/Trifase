@@ -20,7 +20,7 @@ const imagesWithText = [
 //Home video
 const btn = document.querySelector(".switch-btn");
 const video = document.querySelector(".video-container");
-window.addEventListener("scroll", function () {
+window.addEventListener("scroll", () => {
   if (window.scrollY >= 700) {
     video.pause();
     btn.classList.add("slide");
@@ -55,4 +55,26 @@ document.addEventListener("DOMContentLoaded", () => {
     gridItem.appendChild(text);
     grid.appendChild(gridItem);
   });
+});
+
+//navbar
+const button = document.querySelector("#toggle");
+const sectionTwo = document.querySelector(".section-two");
+const navBar = document.querySelector(".navBar");
+const icon = document.querySelector("#icon");
+let toggle = false;
+
+button.addEventListener("click", () => {
+  navBar.classList.toggle("visible");
+  sectionTwo.classList.toggle("visible");
+
+  toggle = !toggle;
+
+  if (toggle) {
+    icon.classList.remove("fa-solid", "fa-bars");
+    icon.classList.add("fa-solid", "fa-xmark");
+  } else {
+    icon.classList.remove("fa-solid", "fa-xmark");
+    icon.classList.add("fa-solid", "fa-bars");
+  }
 });

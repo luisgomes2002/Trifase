@@ -33,3 +33,34 @@ footer {
     margin: 5px;
   }
 }
+
+@media screen and (max-width: 650px) {
+  footer {
+    height: 100%;
+    grid-template-columns: repeat(1, 1fr);
+
+    p {
+      margin: 0 10%;
+    }
+
+    h1 {
+      font-size: 25px;
+      margin: 20px;
+    }
+
+    iframe {
+      width: 80%;
+      margin: 5% 0;
+    }
+
+    img {
+      height: 100px;
+    }
+
+    .contatos {
+      i {
+        margin-bottom: 10%;
+      }
+    }
+  }
+}
