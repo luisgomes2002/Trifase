@@ -34,7 +34,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 900px) {
   footer {
     height: 100%;
     grid-template-columns: repeat(1, 1fr);
