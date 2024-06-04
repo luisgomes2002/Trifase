@@ -48,7 +48,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const gridItem = document.createElement("div");
     gridItem.classList.add("imageProps");
     const images = document.createElement("img");
-    images.src = item.src;
+    images.style.backgroundImage = `linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.253) 50%,
+      rgba(0, 0, 0, 0.8) 99%
+    ), url(${item.src})`;
+
     const text = document.createElement("span");
     text.textContent = item.text;
     gridItem.appendChild(images);

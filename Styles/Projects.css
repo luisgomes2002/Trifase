@@ -50,13 +50,12 @@
   border-radius: 5px;
 
   img {
-    object-fit: cover;
     min-width: 430px;
     max-width: 430px;
     min-height: 480px;
     border-radius: 25px;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
-      rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-position: center;
+    background-size: cover;
   }
 
   span {
@@ -69,23 +68,25 @@
   }
 }
 
-.imageProps::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-top: 310px;
-  margin-left: 5px;
-  height: 100px;
-  width: 430px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.74));
-  z-index: 1;
-  border-radius: 0 0 25px 25px;
-}
-
 @media screen and (max-width: 1700px) {
   .showProjects {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .imageProps {
+    margin-bottom: 30%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .imageProps {
+    margin: 10% 0 25% 0;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .showProjects {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -121,5 +122,17 @@
     margin-top: 70%;
     margin-left: 25px;
     width: 380px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+}
+
+.imageProps {
+  img {
+    margin: 10% 0;
+    min-width: 340px;
+    max-width: 340px;
+    min-height: 400px;
   }
 }
