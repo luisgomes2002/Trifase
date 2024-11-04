@@ -52,15 +52,23 @@ document.addEventListener("DOMContentLoaded", () => {
       to bottom,
       rgba(0, 0, 0, 0.253) 50%,
       rgba(0, 0, 0, 0.8) 99%
-    ), url(${item.src})`;
+      ), url(${item.src})`;
 
     const text = document.createElement("span");
     text.textContent = item.text;
+
     gridItem.appendChild(images);
     gridItem.appendChild(text);
     grid.appendChild(gridItem);
   });
 });
+
+//image modal
+// let modalOpen = false;
+
+// modalButton.addEventListener("click", () => {
+//   modalOpen = !modalOpen;
+// });
 
 //navbar
 const button = document.querySelector("#toggle");

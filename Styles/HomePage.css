@@ -25,14 +25,14 @@
   }
 
   a {
-    background-color: white;
+    margin: 10px;
+    border: none;
+    border-radius: 25px;
+    background-color: #ffffff23;
     font-size: 30px;
     padding: 15px;
-    border-radius: 25px;
-    border: none;
-    margin: 10px;
-    color: #49a6e9;
     cursor: pointer;
+    color: #fff;
     text-decoration: none;
   }
 

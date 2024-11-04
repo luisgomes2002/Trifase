@@ -1,8 +1,16 @@
 .projects {
   text-align: center;
-}
 
-/* #404A8A #a94e15*/
+  button {
+    min-width: 430px;
+    max-width: 430px;
+    min-height: 480px;
+    border-radius: 25px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+  }
+}
 
 .informations {
   background-image: url("../assets/image6.jpg");
@@ -125,6 +133,7 @@
   }
 }
 
+/* 
 @media screen and (max-width: 360px) {
 }
 
@@ -135,4 +144,4 @@
     max-width: 340px;
     min-height: 400px;
   }
-}
+} */
